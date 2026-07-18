@@ -10,33 +10,24 @@ public:
 
         vector<vector<int>> merged;
 
-        // two pointer approach
+        // optimized version
 
-        int prev =  0;
-        int curr = 1;
+        for(auto interval : intervals){
 
-        while( curr < intervals.size()){
+            // if mereged array is empty or if current and previous interval doesn't overlap
 
-            int end  = intervals[prev][1];
-            int start = intervals[curr][0];
-
-            if(end<start){
-                merged.push_back(intervals[prev]);
-                prev = curr;
+            if(merged.empty() || merged.back()[1] < interval[0]){
+                merged.push_back(interval);
             }
             else{
+                // if overlapping we change the end of last interval in merged
 
-                // which is greater interval
-                intervals[curr][0] = intervals[prev][0];
-                intervals[curr][1] = max(intervals[prev][1], intervals[curr][1]);
-                prev = curr;
+                merged.back()[1] = max(interval[1],merged.back()[1]);
+
             }
 
-            curr++;
-
         }
-        merged.push_back(intervals[prev]);
-
+        
 
         return merged;
     }
