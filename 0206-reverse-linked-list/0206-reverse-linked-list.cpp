@@ -27,10 +27,13 @@ public:
         ListNode* nex = head->next; // you never know weather it singl element LL
 
 
-        while(nex){
+        while(nex){  // reached end of list
 
+            // move the curr to previous
             curr->next = prev;
+            // now before moving the next to point curr we need to store the nex->next so we can go frwd 
             ListNode* temp = nex->next;
+            //making nex to point curr
             nex->next = curr;
 
             prev = curr;
