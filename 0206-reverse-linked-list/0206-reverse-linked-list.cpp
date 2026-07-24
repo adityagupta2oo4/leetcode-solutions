@@ -5,38 +5,44 @@
  *     ListNode *next;
  *     ListNode() : val(0), next(nullptr) {}
  *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ *     ListNode(int x, ListNode *
+ xt) : val(x), next(next) {}
  * };
  */
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
         
-        // getting to the last
+        // we are considering 3 nodes say befor current after
 
-        ListNode* last = head;
-        if(last == nullptr){
+        //intiaaly
+
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
+
+        if(head == nullptr){
             return head;
         }
 
-        vector<int> arr;
+        ListNode* nex = head->next; // you never know weather it singl element LL
 
-        while(last){
-            arr.push_back(last->val);
-            last = last->next;
+
+        while(nex){
+
+            curr->next = prev;
+            ListNode* temp = nex->next;
+            nex->next = curr;
+
+            prev = curr;
+            curr = nex;
+            nex = temp;
+
+
         }
+        
 
-        last = head;
-        int i = arr.size()-1;
-
-        while(last){
-            last->val = arr[i];
-            i--;
-            last = last->next;
-        }
-
-
-
-        return head;
+        return curr;
     }
+    
+   
 };
