@@ -23,8 +23,7 @@ public:
 
             slow = slow->next; // move one step
 
-            fast = fast->next;
-            fast =  fast ? fast->next :fast ;
+            fast = fast->next->next;
 
         }
 
