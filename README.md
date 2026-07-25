@@ -39,6 +39,7 @@
 |  |
 | ------- |
 | [0050-powx-n](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0050-powx-n) |
+| [0062-unique-paths](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0062-unique-paths) |
 ## Recursion
 |  |
 | ------- |
@@ -49,4 +50,12 @@
 | ------- |
 | [0206-reverse-linked-list](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0876-middle-of-the-linked-list) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0062-unique-paths) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
