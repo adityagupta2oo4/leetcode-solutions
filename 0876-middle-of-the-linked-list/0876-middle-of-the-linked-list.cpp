@@ -11,29 +11,23 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
+
         
-        int count = 0;
-
-        if(head->next == nullptr){
-            return head;
-        }
-
-        ListNode* mover = head;
-
-
-        while(mover){
-            mover = mover->next;
-            count++;
-        }
+        ListNode* slow = head;
+        ListNode* fast = head;
         
-        int mid = count%2 != 0 ? (count+1)/2 : (count/2)+1;
-        mover = head;
+        if(head->next == nullptr) return head;
 
-        while(mid>1){
-            mover = mover->next;
-            mid--;
+
+        while(fast && fast->next != nullptr){
+
+            slow = slow->next; // move one step
+
+            fast = fast->next;
+            fast =  fast ? fast->next :fast ;
+
         }
 
-        return mover;
+        return slow;
     }
 };
