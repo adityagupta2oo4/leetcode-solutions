@@ -1,46 +1,39 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        
-        vector<int> arr;
 
-        ListNode* mover = list1;
+        if (list1 == nullptr) return list2;
+        if (list2 == nullptr) return list1;
 
+        ListNode* mover1 = list1;
+        ListNode* mover2 = list2;
 
-        while(mover){
-            arr.push_back(mover->val);
-            mover = mover->next;
-        }
-        mover = list2;
-        while(mover){
-            arr.push_back(mover->val);
-            mover = mover->next;
-        }
+        ListNode* head = new ListNode();
+        ListNode* prev = head;
 
-        if(arr.size() == 0) return list1;
-
-        sort(arr.begin(), arr.end());
-
-        ListNode* head = new ListNode(arr[0]);   // first node
-        ListNode* current = head;
-
-        for (int i = 1; i < arr.size(); i++) {
-            current->next = new ListNode(arr[i]); // link new node
-            current = current->next;              // move forward
+        while (mover1 && mover2) {
+            if (mover1->val <= mover2->val) {
+                prev->next = new ListNode(mover1->val);
+                mover1 = mover1->next;
+            } else {
+                prev->next = new ListNode(mover2->val);
+                mover2 = mover2->next;
+            }
+            prev = prev->next;
         }
 
-        return head;
+        while (mover1) {
+            prev->next = new ListNode(mover1->val);
+            prev = prev->next;
+            mover1 = mover1->next;
+        }
 
+        while (mover2) {
+            prev->next = new ListNode(mover2->val);
+            prev = prev->next;
+            mover2 = mover2->next;
+        }
 
+        return head->next;
     }
 };
