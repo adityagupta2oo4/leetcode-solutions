@@ -20,11 +20,11 @@ public:
         //converting the problem from last kth to removing kth
 
         int count = 0;
-        ListNode* temp = head;
+        ListNode* curr = head;
 
-        while(temp){
+        while(curr){
             count++;
-            temp = temp->next;
+            curr = curr->next;
         }
 
         cout<<count;
@@ -42,7 +42,7 @@ public:
         // if it's tail and kth
 
             
-        ListNode* curr = head;
+        curr = head;
         ListNode* prev;
 
         while(k>0){
