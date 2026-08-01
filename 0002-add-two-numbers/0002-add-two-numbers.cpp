@@ -26,54 +26,30 @@ public:
 
         //to store the result in new LL
 
-        ListNode* dummy = new ListNode();
+        ListNode* dummy = new ListNode(0);
         ListNode* curr3 = dummy;
 
-        // adding the number 
+        // more cleaner
 
-        while(curr1 && curr2){
+        while(curr1 || curr2 || carry_flag){
 
-            int add_val = curr1->val + curr2->val + carry_flag;
+            int sum = carry_flag;
 
-            curr3->next = new ListNode(add_val%10);
+            if(curr1){
+                sum += curr1->val;
+                curr1 = curr1->next;
+            }
+            
+            if(curr2){
+                sum += curr2->val;
+                curr2 = curr2->next;
+            }
 
-            carry_flag = add_val/10;
-
-            curr1 = curr1->next;
-            curr2 = curr2->next;
+            curr3->next = new ListNode(sum%10);
             curr3 = curr3->next;
-        }
-
-        //now it's not neccarry that the size of the l1 and l2 are same
-
-        while(curr1){
-
-            int add_val = curr1->val + carry_flag;
-
-            curr3->next = new ListNode(add_val%10);
-
-            carry_flag = add_val/10;
-            curr1 = curr1->next;
-            curr3 = curr3->next;
+            carry_flag = sum/10;
 
         }
-
-        while(curr2){
-
-            int add_val = curr2->val + carry_flag;
-
-            curr3->next = new ListNode(add_val%10);
-
-            carry_flag = add_val/10;
-            curr2 = curr2->next;
-            curr3 = curr3->next;
-
-        }
-
-        // last check weather carry has become 0 or not
-
-        if(carry_flag != 0) curr3->next = new ListNode(carry_flag);
-
 
         return dummy->next;
 
