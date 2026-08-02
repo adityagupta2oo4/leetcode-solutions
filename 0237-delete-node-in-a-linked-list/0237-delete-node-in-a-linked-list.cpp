@@ -10,15 +10,19 @@ class Solution {
 public:
     void deleteNode(ListNode* node) {
         
-        ListNode* prev = new ListNode(0);
-        while(node->next != nullptr){
-            node->val = node->next->val;
-            
-            if(node->next->next == nullptr) prev = node;
-            node = node->next;
-        }
+        ListNode* prev = node;
+        // prev and node at same point
 
-        prev->next = nullptr;
+
+        node->val = node->next->val;
+
+        node = node->next;
+        //[4,1,1,9] [4,prev(1),node(1),9]
+
+        //normaly delete 
+
+        prev->next = node->next;
+        
 
         delete node;
 
