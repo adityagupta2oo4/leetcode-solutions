@@ -1,7 +1,7 @@
 class Solution {
 public:
 
-    int maxByValue(map<int,int>  &mp){ // passing by reference so that we do have to copy the hash map for each function call this drastically reduce the tc from n2 to nlogn
+    int maxByValue(map<int,int>  &mp){ // passing by reference so that we do have to copy the hash map for each function call
 
         int key_max = 0; // assigning zero so that no garbage value
         int value_max = INT_MIN;
@@ -20,12 +20,9 @@ public:
         map<int,int> hashMap;
         
         for(int i = 0 ; i<nums.size() ; i++){
-            hashMap[nums[i]] = 0;
+            hashMap[nums[i]]++;
         }
 
-        for(int i = 0 ; i<nums.size() ; i++){
-            hashMap[nums[i]] += 1;
-        }
         vector<int> ans;
 
         for(int i = 0 ; i<k ; i++){
