@@ -27,6 +27,7 @@ public:
             hashMap[nums[i]] += 1;
         }
         vector<int> ans;
+        
         for(int i = 0 ; i<k ; i++){
 
             int max  = maxByValue(hashMap);
@@ -35,9 +36,7 @@ public:
 
         }
 
-        for(auto it : hashMap ){
-            cout<<it.first<<" , "<<it.second<<endl;
-        }
+
         
 
         return ans;
