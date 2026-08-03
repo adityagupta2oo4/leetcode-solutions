@@ -9,6 +9,7 @@
 | [0075-sort-colors](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0088-merge-sorted-array) |
 | [0287-find-the-duplicate-number](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0287-find-the-duplicate-number) |
+| [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0493-reverse-pairs](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0493-reverse-pairs) |
 ## Two Pointers
 |  |
@@ -25,6 +26,7 @@
 | [0056-merge-intervals](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0088-merge-sorted-array) |
+| [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 ## Binary Search
 |  |
 | ------- |
@@ -73,6 +75,7 @@
 ## Divide and Conquer
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0493-reverse-pairs](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0493-reverse-pairs) |
 ## Binary Indexed Tree
 |  |
@@ -94,4 +97,21 @@
 |  |
 | ------- |
 | [0160-intersection-of-two-linked-lists](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
+| [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
+## Counting
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
