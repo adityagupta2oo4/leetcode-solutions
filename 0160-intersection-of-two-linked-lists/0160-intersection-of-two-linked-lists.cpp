@@ -18,11 +18,8 @@ public:
             b = b ? b->next : headB;
         }
 
+
         return a;
-        
-
-
-        
         
     }
 };
