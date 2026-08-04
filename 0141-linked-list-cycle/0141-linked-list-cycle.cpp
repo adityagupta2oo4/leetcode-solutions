@@ -9,20 +9,13 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-
-        //edge case
-        if(head == nullptr ) return false;
-        ListNode* cur = head;
-        int x = 1000000 ;//choosing value which is out of range of  Node.val just to mark it visited
-
-        while(cur){
-
-            if (cur->next && cur->next->val == x) //checking curr-> nest exist or not then accessing its value
-                return true;
-            cur->val = x;
-            cur = cur->next;
-        }
         
-        return false;
+        // using recurscion
+        if(head == nullptr ) return false;
+
+        if(head->val == INT_MAX) return true;
+        head->val = INT_MAX;
+        
+        return hasCycle(head->next);
     }
 };
