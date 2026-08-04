@@ -1,39 +1,35 @@
 class Solution {
 public:
 
-    int maxByValue(map<int,int>  &mp){ // passing by reference so that we do have to copy the hash map for each function call
-
-        int key_max = 0; // assigning zero so that no garbage value
-        int value_max = INT_MIN;
-
-        for(auto it : mp){
-            if(it.second>value_max) {
-                value_max = it.second;
-                key_max = it.first;
-            }
-        }
-        return key_max;
-
-    }
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        
-        map<int,int> hashMap;
-        
+        //bucket short
+
+        unordered_map<int,int> mp;
+
         for(int i = 0 ; i<nums.size() ; i++){
-            hashMap[nums[i]]++;
+            mp[nums[i]]++;
+        }
+
+        //bucket array
+        vector<vector<int>> bucket(nums.size()+1);  //[[]] here index->freq and [...[num with frequency == index i]]
+
+        for( auto it : mp){
+            bucket[it.second].push_back(it.first);
         }
 
         vector<int> ans;
-
-        for(int i = 0 ; i<k ; i++){
-
-            int max  = maxByValue(hashMap);
-            ans.push_back(max);
-            hashMap.erase(max);
-
+        
+        for(int i = nums.size() ; i>0 ;i--){
+            for(int a : bucket[i]){
+                if(k>0) {
+                    ans.push_back(a);
+                    k--;
+                }
+            }
         }
 
         return ans;
+        
 
     }
 };
