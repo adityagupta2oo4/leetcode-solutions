@@ -7,7 +7,7 @@ public:
         unordered_map<int,int> mp;
 
         for(int i = 0 ; i<nums.size() ; i++){
-            mp[nums[i]]++; // 
+            mp[nums[i]]++; //
         }
 
         //bucket array
@@ -21,11 +21,14 @@ public:
         
         for(int i = nums.size() ; i>0 ;i--){
             for(int a : bucket[i]){
+                if(k>0) {
+                    ans.push_back(a);
+                    k--;
+                }else{
+                    break;
+                }
+
                 
-            ans.push_back(a);
-
-            if(ans.size() == k) return ans;
-
             }
         }
 
