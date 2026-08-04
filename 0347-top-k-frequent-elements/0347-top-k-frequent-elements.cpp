@@ -24,12 +24,12 @@ public:
                 if(k>0) {
                     ans.push_back(a);
                     k--;
-                }else{
-                    break;
                 }
 
                 
             }
+
+            if(k==0) break;
         }
 
         return ans;
