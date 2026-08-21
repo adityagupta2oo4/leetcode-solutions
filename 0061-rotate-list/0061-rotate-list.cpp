@@ -23,10 +23,9 @@ public:
         }
 
         cur->next = head;
-        int eff_k = k%(n+1);
+        int eff_k = (n+1)-k%(n+1);
         
-        eff_k = (n+1)- eff_k;
-        cout<<eff_k;
+
 
         cur = head;
 
