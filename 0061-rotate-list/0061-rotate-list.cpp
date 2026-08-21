@@ -16,35 +16,32 @@ public:
         int n = 0;
 
         ListNode* cur = head;
-        while(cur)
+        while(cur->next != nullptr)
         {
             cur = cur->next;
             n++;
         }
-        int eff_k = k%n;
+
+        cur->next = head;
+        int eff_k = k%(n+1);
         
-        eff_k = n - eff_k;
+        eff_k = (n+1)- eff_k;
         cout<<eff_k;
 
-        cur = head->next;
-        ListNode* prev = head;
+        cur = head;
+
         while(eff_k>1){
-            prev = cur;
             cur = cur->next;
             eff_k--;
         }
 
-        prev->next = nullptr;
+        head = cur->next;
 
-        ListNode* head_new = cur;
 
-        if(cur == nullptr) return head;
-        while(cur->next != nullptr){
-            cur = cur->next;
-        }
+        cur->next = nullptr;
 
-        cur->next = head;
-        return head_new;
+        return head;
+        
         
     }
 };
