@@ -20,26 +20,59 @@ public:
         
 
         if(head == nullptr) return head;
-        unordered_map<Node*,Node*> mp;
+       
+       // interweaving  algo using constant space
+       // A->COPY -> B -> COPY
 
-        Node* cur =  head;
+       // making the copy 
 
-        while(cur){    
-            mp[cur] = new Node(cur->val);
-            cur = cur->next;
+       Node* cur = head;
+
+       //just leaving the random and copying the rest
+
+       while(cur){
+
+        Node* copy = new Node(cur->val);
+        copy->next = cur->next;
+        cur->next = copy;
+        cur = cur->next->next;
+        
+       }
+
+       //now handling the random
+
+       cur = head;
+
+       while(cur){
+
+        cur->next->random = (cur->random) ? cur->random->next : nullptr;
+        cur = cur->next->next;
+
+       }
+
+       // now deleting the original
+
+       cur = head;
+       head = cur->next;
+
+       while(cur){
+
+        Node* copy = cur->next;
+
+        // geting original
+
+        cur->next = copy->next;
+
+        if(copy->next){
+            copy->next = copy->next->next;
         }
+        cur = cur->next;
 
-        cur = head;
+       }
 
-        while(cur){
-            
-            mp[cur]->next = (cur->next) ? mp[cur->next] : nullptr;
-            mp[cur]->random = (cur->random) ? mp[cur->random] : nullptr;
+       return head;
 
-            cur = cur->next;
-        }
+       
 
-
-        return mp[head];
     }
 };
