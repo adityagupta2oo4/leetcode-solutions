@@ -35,7 +35,7 @@ public:
         Node* copy = new Node(cur->val);
         copy->next = cur->next;
         cur->next = copy;
-        cur = cur->next->next;
+        cur = cur->next->next;//can cause MLE is used cur->next;
         
        }
 
@@ -46,7 +46,7 @@ public:
        while(cur){
 
         cur->next->random = (cur->random) ? cur->random->next : nullptr;
-        cur = cur->next->next;
+        cur = cur->next->next; 
 
        }
 
