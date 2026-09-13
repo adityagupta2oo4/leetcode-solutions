@@ -11,6 +11,7 @@
 | [0075-sort-colors](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0088-merge-sorted-array) |
 | [0287-find-the-duplicate-number](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0287-find-the-duplicate-number) |
+| [0322-coin-change](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0493-reverse-pairs](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0493-reverse-pairs) |
 ## Two Pointers
@@ -83,6 +84,7 @@
 | ------- |
 | [0042-trapping-rain-water](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0062-unique-paths](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0062-unique-paths) |
+| [0322-coin-change](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0322-coin-change) |
 ## Combinatorics
 |  |
 | ------- |
@@ -146,4 +148,16 @@
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0042-trapping-rain-water) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0322-coin-change) |
+## Knapsack Problem
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0322-coin-change) |
+## Complete Knapsack
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0322-coin-change) |
 <!---LeetCode Topics End-->
