@@ -1,36 +1,25 @@
 class Solution {
 public:
 
-    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-
-        sort(nums.begin(), nums.end());
-
-        vector<vector<int>> ans;
-        vector<int> sub;
-
-        solve(nums, ans, sub, 0);
-
-        return ans;
+  void subsetsWithDup(vector<int>& nums, vector<int> res, vector<vector<int>>& ans, int start) {
+    if (start == nums.size()) {
+        ans.push_back(res);
+        return;
     }
-
-    void solve(vector<int>& nums,
-               vector<vector<int>>& ans,
-               vector<int>& sub,
-               int start) {
-
-        ans.push_back(sub);
-
-        for(int i = start; i < nums.size(); i++) {
-
-            // Skip duplicate choices at the same level
-            if(i > start && nums[i] == nums[i - 1])
-                continue;
-
-            sub.push_back(nums[i]);
-
-            solve(nums, ans, sub, i + 1);
-
-            sub.pop_back();
-        }
+    subsetsWithDup(nums,res,ans,start+1);
+    while (start + 1 < nums.size() && nums[start] == nums[start+1]) {
+        res.push_back(nums[start]);
+        ++start;
     }
+    res.push_back(nums[start]);
+    subsetsWithDup(nums,res,ans,start+1);
+}
+
+vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+    vector<int> res;
+    vector<vector<int>> ans;
+    sort(nums.begin(),nums.end());
+    subsetsWithDup(nums,res,ans,0);
+    return ans;
+}
 };
