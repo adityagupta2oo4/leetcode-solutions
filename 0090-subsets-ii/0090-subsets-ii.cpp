@@ -1,32 +1,36 @@
 class Solution {
 public:
+
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-        
-        vector<vector<int>> ans ;
-        sort(nums.begin() ,nums.end());
 
-        findAllSub(nums , ans ,{} ,0);
-        sort(ans.begin() , ans.end());
+        sort(nums.begin(), nums.end());
 
-        ans.erase(unique(ans.begin() , ans.end()) , ans.end());
-        
+        vector<vector<int>> ans;
+        vector<int> sub;
 
+        solve(nums, ans, sub, 0);
 
         return ans;
-
-
     }
 
-    void findAllSub(vector<int> nums , vector<vector<int>>& ans , vector<int> sub ,int next){
+    void solve(vector<int>& nums,
+               vector<vector<int>>& ans,
+               vector<int>& sub,
+               int start) {
 
-        if(next == nums.size()){
-            ans.push_back(sub);
-            return;
+        ans.push_back(sub);
+
+        for(int i = start; i < nums.size(); i++) {
+
+            // Skip duplicate choices at the same level
+            if(i > start && nums[i] == nums[i - 1])
+                continue;
+
+            sub.push_back(nums[i]);
+
+            solve(nums, ans, sub, i + 1);
+
+            sub.pop_back();
         }
-
-        findAllSub(nums , ans , sub , next+1);
-        sub.push_back(nums[next]);
-        findAllSub(nums ,ans , sub , next+1);
-
     }
 };
