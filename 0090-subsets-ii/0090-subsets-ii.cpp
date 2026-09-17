@@ -4,23 +4,13 @@ public:
         
         vector<vector<int>> ans ;
         sort(nums.begin() ,nums.end());
-        
+
         findAllSub(nums , ans ,{} ,0);
         sort(ans.begin() , ans.end());
 
-        int i = 0;
+        ans.erase(unique(ans.begin() , ans.end()) , ans.end());
         
 
-
-        while( i + 1  < ans.size()){
-
-            if(ans[i] == ans[i+1]){
-                ans.erase(ans.begin() + i);
-            } 
-            else{
-                i++;
-            }
-        }
 
         return ans;
 
