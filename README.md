@@ -11,6 +11,7 @@
 | [0075-sort-colors](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0090-subsets-ii) |
+| [0217-contains-duplicate](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0217-contains-duplicate) |
 | [0287-find-the-duplicate-number](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0287-find-the-duplicate-number) |
 | [0322-coin-change](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
@@ -38,6 +39,7 @@
 | [0056-merge-intervals](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0088-merge-sorted-array) |
+| [0217-contains-duplicate](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0455-assign-cookies](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0455-assign-cookies) |
 ## Binary Search
@@ -122,6 +124,7 @@
 | [0141-linked-list-cycle](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
+| [0217-contains-duplicate](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
