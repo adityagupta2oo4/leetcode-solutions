@@ -4,6 +4,7 @@ public:
         
         vector<vector<int>> ans ;
         vector<int> sub;
+        sort(candidates.begin() , candidates.end());
         solve(candidates , ans , sub, target ,0);
 
         return ans;
@@ -20,7 +21,7 @@ public:
         
         for(int i = start ; i<nums.size() ; i++){
 
-            if(target - nums[i] < 0) continue;
+            if(target - nums[i] < 0) return;
 
             sub.push_back(nums[i]);
 
