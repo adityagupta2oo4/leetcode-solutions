@@ -23,8 +23,8 @@ public:
 
         for(int i = start ; i<nums.size() ; i++){
 
-            if(target - nums[i] < 0 ) return;
-            if( i > start && nums[i] == nums[i-1]) continue;
+            if(target - nums[i] < 0 ) return; // make sure we can remove the cur to acchiecv target since sirted array so 0
+            if( i > start && nums[i] == nums[i-1]) continue; // make sure no duplicate set occur
 
             
             sub.push_back(nums[i]);
