@@ -20,6 +20,7 @@
 | [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0455-assign-cookies](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0455-assign-cookies) |
 | [0493-reverse-pairs](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0493-reverse-pairs) |
+| [0724-find-pivot-index](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0724-find-pivot-index) |
 | [1004-max-consecutive-ones-iii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 ## Two Pointers
 |  |
@@ -195,5 +196,6 @@
 ## Prefix Sum
 |  |
 | ------- |
+| [0724-find-pivot-index](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0724-find-pivot-index) |
 | [1004-max-consecutive-ones-iii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 <!---LeetCode Topics End-->
