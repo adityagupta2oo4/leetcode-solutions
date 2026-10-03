@@ -19,6 +19,7 @@
 | [0347-top-k-frequent-elements](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0455-assign-cookies](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0455-assign-cookies) |
 | [0493-reverse-pairs](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0493-reverse-pairs) |
+| [1004-max-consecutive-ones-iii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 ## Two Pointers
 |  |
 | ------- |
@@ -50,6 +51,7 @@
 | [0074-search-a-2d-matrix](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
 | [0287-find-the-duplicate-number](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0287-find-the-duplicate-number) |
 | [0493-reverse-pairs](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0493-reverse-pairs) |
+| [1004-max-consecutive-ones-iii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -184,4 +186,12 @@
 | [0039-combination-sum](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0040-combination-sum-ii) |
 | [0090-subsets-ii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0090-subsets-ii) |
+## Sliding Window
+|  |
+| ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
+## Prefix Sum
+|  |
+| ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 <!---LeetCode Topics End-->
