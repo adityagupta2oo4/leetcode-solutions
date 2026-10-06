@@ -9,6 +9,7 @@
 | [0040-combination-sum-ii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0056-merge-intervals](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0056-merge-intervals) |
+| [0066-plus-one](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0066-plus-one) |
 | [0074-search-a-2d-matrix](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0088-merge-sorted-array) |
@@ -70,6 +71,7 @@
 | [0050-powx-n](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0050-powx-n) |
 | [0060-permutation-sequence](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0060-permutation-sequence) |
 | [0062-unique-paths](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0062-unique-paths) |
+| [0066-plus-one](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0066-plus-one) |
 ## Recursion
 |  |
 | ------- |
