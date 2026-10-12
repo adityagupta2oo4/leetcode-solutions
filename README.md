@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0037-sudoku-solver](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0042-trapping-rain-water) |
@@ -67,6 +68,7 @@
 ## Matrix
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0037-sudoku-solver) |
 | [0074-search-a-2d-matrix](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
 ## Math
 |  |
@@ -136,6 +138,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0037-sudoku-solver) |
 | [0138-copy-list-with-random-pointer](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0142-linked-list-cycle-ii) |
@@ -195,6 +198,7 @@
 ## Backtracking
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0046-permutations) |
@@ -217,5 +221,10 @@
 ## Algorithm X
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0037-sudoku-solver) |
 | [0051-n-queens](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0051-n-queens) |
+## Dancing Links
+|  |
+| ------- |
+| [0037-sudoku-solver](https://github.com/adityagupta2oo4/leetcode-solutions/tree/master/0037-sudoku-solver) |
 <!---LeetCode Topics End-->
