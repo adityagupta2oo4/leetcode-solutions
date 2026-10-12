@@ -1,69 +1,77 @@
-
 class Solution {
 public:
-    bool isSafe(vector<vector<char>>& board,
-                int row, int col, char num) {
 
-        // Check column
-        for (int i = 0; i < 9; i++) {
-            if (board[i][col] == num)
-                return false;
-        }
+    void solveSudoku(vector<vector<char>>& board) {
+        solve(board);
+    }
 
-        // Check row
-        for (int j = 0; j < 9; j++) {
-            if (board[row][j] == num)
-                return false;
-        }
+private:
 
-        // Check 3x3 sub-box
-        int row_start = (row / 3) * 3;
-        int col_start = (col / 3) * 3;
+    bool solve(vector<vector<char>>& board) {
 
-        for (int i = row_start; i < row_start + 3; i++) {
-            for (int j = col_start; j < col_start + 3; j++) {
-                if (board[i][j] == num)
+        for (int row = 0; row < 9; row++) {
+
+            for (int col = 0; col < 9; col++) {
+
+                // Find an empty cell
+                if (board[row][col] == '.') {
+
+                    // Try digits 1 to 9
+                    for (char digit = '1'; digit <= '9'; digit++) {
+
+                        if (isValid(board, row, col, digit)) {
+
+                            // Choose
+                            board[row][col] = digit;
+
+                            // Explore
+                            if (solve(board)) {
+                                return true;
+                            }
+
+                            // Backtrack
+                            board[row][col] = '.';
+                        }
+                    }
+
+                    // No valid digit found
                     return false;
+                }
+            }
+        }
+
+        // Board completely filled
+        return true;
+    }
+
+    bool isValid(
+        vector<vector<char>>& board,
+        int row,
+        int col,
+        char digit
+    ) {
+
+        for (int i = 0; i < 9; i++) {
+
+            // Row
+            if (board[row][i] == digit) {
+                return false;
+            }
+
+            // Column
+            if (board[i][col] == digit) {
+                return false;
+            }
+
+            // 3 × 3 box
+            int boxRow = 3 * (row / 3) + i / 3;
+            int boxCol = 3 * (col / 3) + i % 3;
+
+            if (board[boxRow][boxCol] == digit) {
+                return false;
             }
         }
 
         return true;
-    }
-
-    bool solve(vector<vector<char>>& board, int row, int col) {
-
-        // Entire board completed
-        if (row == 9)
-            return true;
-
-        // Move to the next row
-        if (col == 9)
-            return solve(board, row + 1, 0);
-
-        // Skip already-filled cells
-        if (board[row][col] != '.') {
-            return solve(board, row, col + 1);
-        }
-
-        // Try digits 1 through 9
-        for (char num = '1'; num <= '9'; num++) {
-
-            if (isSafe(board, row, col, num)) {
-
-                board[row][col] = num;
-
-                if (solve(board, row, col + 1))
-                    return true;
-
-                // Backtrack
-                board[row][col] = '.';
-            }
-        }
-
-        return false;
-    }
-
-    void solveSudoku(vector<vector<char>>& board) {
-        solve(board, 0, 0);
     }
 };
